@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Order summary card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body {
+            background-image: url("images/pattern-background-mobile.svg");
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+            background-size: contain;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: red hat display;
+        }
+
+        .card {
+            width: 90%;
+            margin: 7.5vh auto;
+            height: 85vh;
+            max-width: 375px;
+            min-height: 570px;
+            background-color: hsl(225, 100%, 98%);
+            border-radius: 20px;
+        }
+
+        .rest {
+            width: 90%;
+            padding: 5%;
+        }
+
+        header {
+            background-image: url("images/illustration-hero.svg");
+            height: 30%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 20px 20px 0 0;
+        }
+
+        main {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10%;
+        }
+
+        section {
+            background-color: hsl(226, 100%, 96%);
+            height: 90px;
+            border-radius: 15px;
+            position: relative;
+            width: 100%;
+            margin-bottom: 10%;
+        }
+
+        section img {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            height: 60%;
+        }
+
+        section div p,
+        h2 {
+            margin: 0;
+        }
+
+        section div {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+        }
+
+        section a {
+            position: absolute;
+            top: 35%;
+            right: 8%;
+            color: hsl(245, 75%, 52%);
+            font-weight: 900;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 16px;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            font-weight: 500;
+            color: gray;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 5px;
+            border: none;
+            color: gray;
+            background-color: transparent;
+        }
+
+        button:first-child {
+            background-color: hsl(245, 75%, 52%);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        button:first-child a {
+            color: white;
+        }
+
+        button a {
+            text-decoration: none;
+            color: gray;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        @media (min-width: 400px) {
+            .card {
+                margin: 10vh auto;
+                height: 80vh;
+            }
+
+            section a:hover {
+                opacity: 0.5;
+            }
+
+            button:first-child:hover {
+                opacity: 0.5;
+            }
+
+            button:first-child a:hover {
+
+                color: white;
+            }
+
+            button a:hover {
+                color: black;
+            }
+
+            body {
+                background-image: url("images/pattern-background-desktop.svg");
+                background-size: contain;
+            }
+        }
+
+        @media (min-width:1000px) {
+            body {
+                background-position: 0 -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <header></header>
+        <div class="rest">
+            <main>
+                <h1>Order Summary</h1>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+                    device anywhere you like!</p>
+            </main>
+            <section class="clearfix">
+                <img src="images/icon-music.svg">
+                <div>
+                    <h2>Annual Plan</h2>
+                    <p>$59.99/year</p>
+                </div>
+                <a href="#">Change</a>
+            </section>
+            <Div class="buttons">
+                <button><a href="#">Proceed to Payment</a></button>
+                <button><a href="#">Cancel Order</a></button>
+
+            </Div>
+        </div>
+    </div>
+</body></html>
